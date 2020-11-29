@@ -10,3 +10,5 @@ class productosVenta(models.Model):
     codigo = models.CharField(max_length=13)
     tipo = models.CharField(max_length=10)
     tamaño = models.CharField(max_length=7, default=None)
+    talle = models.CharField(max_length=7, default=None)
+    tipoIndumentaria = models.ForeignKey(TipoIndumentaria, default=None , on_delete=models.CASCADE)

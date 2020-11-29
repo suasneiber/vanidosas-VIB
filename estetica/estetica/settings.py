@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.insumos',
     'apps.productosVenta',
     'apps.proveedor',
+    'apps.CategoriaIndumentaria',
 ]
 
 MIDDLEWARE = [

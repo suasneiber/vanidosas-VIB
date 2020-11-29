@@ -1,5 +1,5 @@
 from django.db import models
-
+from apps.CategoriaIndumentaria.models import CategoriaIndumentaria
 # Create your models here.
 
 class productosVenta(models.Model):
@@ -11,4 +11,4 @@ class productosVenta(models.Model):
     tipo = models.CharField(max_length=10)
     tamaño = models.CharField(max_length=7, default=None)
     talle = models.CharField(max_length=7, default=None)
-    tipoIndumentaria = models.ForeignKey(TipoIndumentaria, default=None , on_delete=models.CASCADE)
+    CatIndumentaria = models.ForeignKey(CategoriaIndumentaria, default=None , on_delete=models.CASCADE)

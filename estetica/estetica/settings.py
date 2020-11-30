@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'apps.productosVenta',
     'apps.proveedor',
     'apps.CategoriaIndumentaria',
+    'apps.curso',
+    'apps.alumno',
 ]
 
 MIDDLEWARE = [
